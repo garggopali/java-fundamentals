@@ -4,9 +4,7 @@
  */
 public class Book {
     // Private instance variables
-    private String title;
-    private String author;
-    private String isbn;
+
     
     /**
      * Constructor to initialize a Book object
@@ -25,7 +23,7 @@ public class Book {
      * @return The title of the book
      */
     public String getTitle() {
-        return title;
+        return null;
     }
     
     /**
@@ -33,7 +31,7 @@ public class Book {
      * @return The author of the book
      */
     public String getAuthor() {
-        return author;
+        return null;
     }
     
     /**
@@ -41,7 +39,7 @@ public class Book {
      * @return The ISBN of the book
      */
     public String getIsbn() {
-        return isbn;
+        return null;
     }
     
     /**

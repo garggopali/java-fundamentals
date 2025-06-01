@@ -12,7 +12,7 @@ public class Library {
      * Constructor to initialize the library with an empty collection
      */
     public Library() {
-        books = null;
+        books = new ArrayList<>();
     }
     
     /**
@@ -22,7 +22,7 @@ public class Library {
      */
     public void addBook(Book book) {
         if (book != null) {
-            //add book into list using add(book) method
+            books.add(book);
             System.out.println("Book added successfully: " + book.getTitle());
         } else {
             System.out.println("Cannot add null book to library.");
@@ -97,6 +97,6 @@ public class Library {
      * @return The number of books
      */
     public int getTotalBooks() {
-        return null; //return list using size() method
+        return books.size(); //return list using size() method
     }
 }

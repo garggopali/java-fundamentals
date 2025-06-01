@@ -3,7 +3,9 @@
  * Each book has a title, author, and unique ISBN
  */
 public class Book {
-    // Private instance variables
+    String title;
+    String author;
+    String isbn;
 
     
     /**
@@ -23,7 +25,7 @@ public class Book {
      * @return The title of the book
      */
     public String getTitle() {
-        return null;
+        return title;
     }
     
     /**
@@ -31,7 +33,7 @@ public class Book {
      * @return The author of the book
      */
     public String getAuthor() {
-        return null;
+        return author;
     }
     
     /**
@@ -39,7 +41,7 @@ public class Book {
      * @return The ISBN of the book
      */
     public String getIsbn() {
-        return null;
+        return isbn;
     }
     
     /**

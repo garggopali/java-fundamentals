@@ -1,6 +1,7 @@
 package com.gopali.library_system.service;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Optional;
 
 import org.apache.tomcat.jni.Library;
@@ -15,7 +16,11 @@ public class LibraryService {
     private ArrayList<Book> books;
 
     LibraryService() { //
-        books = new ArrayList<>();
+        books = new ArrayList<>(Arrays.asList(
+        new Book("Java","GG","1234"),
+        new Book("Php","GG1","67878"),
+        new Book("Java springboot","GG","99887")
+            ));
     }
 
    public Boolean addBook(Book book) {

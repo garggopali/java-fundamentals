@@ -1,9 +1,18 @@
 package com.gopali.library_system.model;
 
+import org.springframework.stereotype.Component;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class Book {
 
     // Include at least the following fields: String isbn, String title, String
     // author, int year. Add constructors, getters, setters, and toString method.
+    
+    @Id
+    private Integer id;
     private String author;
     private String title;
     private String isbn;
